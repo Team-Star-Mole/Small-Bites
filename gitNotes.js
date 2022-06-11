@@ -1,0 +1,2 @@
+// 1. pull latest upstream into your local main branch 
+// 2. merge your up-to-date main branch into your feature branch 3. resolve merge conflicts 4. push your feature branch to your remote fork 5. pull your remote feature branch into your organization's main branch
