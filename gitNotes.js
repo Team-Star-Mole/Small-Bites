@@ -7,3 +7,7 @@
 // 5. pull your remote feature branch into your organization's main branch
 
 // do pull request into dev branch on org repo (base: dev)
+
+// git push origin featureraisa
+// git checkout -b featureraisa (create a new branch) 
+// git branch -v
