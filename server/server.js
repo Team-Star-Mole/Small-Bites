@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 // app.use(express.static(path.resolve(__dirname, '../client')));
 
 // get database data to render on the frontend
-app.use('/check', customerRouter);
+app.use('/', customerRouter);
 
 // Testing localhost:5000/tom
 app.get('/tom', (req, res) => {

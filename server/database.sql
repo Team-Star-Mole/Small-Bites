@@ -13,6 +13,22 @@ CREATE TABLE food_bodega_1(
     bodega_id int
 );
 
+CREATE TABLE food_bodega_2(
+    item_id int, 
+    price DECIMAL(4, 2), 
+    item_description VARCHAR(255), 
+    bodega_id int
+)
+
+CREATE TABLE food_bodega_3(
+    item_id int, 
+    price DECIMAL(4, 2), 
+    item_description VARCHAR(255), 
+    bodega_id int
+)
+
+-- update all of bodega_id column to equal 2 
+Update food_bodega_2 set bodega_id = 2 where bodega_id = 1
 
 -- IF VIEW MENU BUTTON for Bodega 1 IS CLICKED: send get request to get menu for bodega 1 food table
 SELECT * FROM food_bodega_1
