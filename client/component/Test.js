@@ -52,50 +52,44 @@ const Test = () => {
 
     <div>Test.js top
       <button onClick={handleClick}>Click {number}</button>
-
-          <div>
-    <div>Testing react
-      <button onClick={handleClick}>Click {number}</button>
-
+    
+      <div>Testing react
+        <button onClick={handleClick}>Click {number}</button>
           <h1>
-
             {name.map(el => {
               return (
                 <h1>{el.bodega_name}</h1>
-
               )
             })}
             {/* ${getSum()}  */}
+          </h1>          
+      </div>
 
-          </div>
 
-          <div>
+      <h2>
+        {menu.map(el => {
+          return(
+            <>
+              <h3>{el.item_description}</h3>
+              <h3>${el.price}</h3>
+              <h3>{el.bodega_id}</h3>
+            </>
+          )
+        })}
+      </h2>
 
-          </h1>
 
-          <h2>
-
-            {menu.map(el => {
-              return(
-                <>
-                  <h3>{el.item_description}</h3>
-                  <h3>${el.price}</h3>
-                  <h3>{el.bodega_id}</h3>
-              </>
-              )
-            })}
-
-          </div>
       <DropDownMenu menu={menu} />
 
       <h6>Test.js bottom</h6>
+    </div>
 
-          </h2>
+
 
 
          
 
-     </div>
+
   )
 };
 
