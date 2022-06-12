@@ -1,27 +1,34 @@
-import React, { Component } from 'react';
 
-const NavBar = () => {
+import React, { useState, useEffect } from 'react';
 
 
-  return (
-    <div className='navbar-container'>
-      {/* <form action='/' method='GET'> */}
-        <label htmlFor='nav-search-bar'>
-          <span className='visually-hidden'></span>
-        </label>
-        <input
-          id='nav-search-bar'
-          type='text'
-          name='search'          
-          placeholder='Support a small biz'
-        />
-        <button type='submit'>Search!</button>
-      {/* </form> */}
+const DropDownMenu = () => {
+    const [list, setList] = useState([]);
+    
+    // useEffect(() => {
+    // /* fetch bodegas name */
+    //     fetch('/restname')
+    //     .then((response) => response.json())
+    //     .then(response => (response))
+    //     .catch(err => (`Error: ${err}`))
+    // })\
+
+    console.log('list', list)
+return (
+    <div className="list"> 
+        <h1>Featured Bodegas</h1>
+     <input value={list} onChange={(e) => setList(e.target.value)}/> 
+            <p> 
+            {list.map((el) => {
+                return <div> {val.bodega_name}</div>
+                     })}
+            </p>
+            
     </div>
-  )
+)
 
-}
+};
 
 
+export default DropDownMenu;
 
-export default NavBar;
