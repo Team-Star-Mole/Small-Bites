@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 const NavBar = () => {
 
+  
 
   return (
     <div className='navbar-container'>
