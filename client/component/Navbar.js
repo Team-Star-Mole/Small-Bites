@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import { useState, useEffect } from 'react';
+
+import React, { useState, useEffect } from 'react';
 
 
-const dropDownmenu = () => {
+const DropDownMenu = () => {
     const [list, setList] = useState([]);
     
     // useEffect(() => {
@@ -30,4 +30,5 @@ return (
 };
 
 
-export default dropDownmenu;
+export default DropDownMenu;
+
