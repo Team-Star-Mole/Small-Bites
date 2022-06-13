@@ -49,9 +49,9 @@ const FeaturedBiz = ({chosenId, name, img}) => {
       <h1 className='featured-biz-header'>{name} </h1>
 
       {/* <Button onClick={handleClick} variant="gradient" gradient={{ from: '#ed6ea0', to: '#ec8c69', deg: 35 }}>View Menu</Button> */}
-      <div>
-        <img src={img} alt='placeholder image' styles={{width: '100px'}} />
-      </div>
+      {/* <div> */}
+        <img className='featured-card-img' src={img} alt='placeholder image' styles={{width: '100px'}} />
+      {/* </div> */}
       
       <Card shadow="md" p="lg">
 
