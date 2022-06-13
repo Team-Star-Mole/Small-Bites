@@ -11,8 +11,8 @@ router.get('/', getCustomers.getBackendData, (req, res) => {
     res.status(200).json(res.locals.customer);
 })
 
-router.get('/bodega-names', getCustomers.getBodegaNames, (req, res) => {
-    res.status(200).json(res.locals.customer);
+router.get('/bodega-names/', getCustomers.getBodegaNames, (req, res) => {
+    res.status(200).json(res.locals.bodega);
 })
 
 

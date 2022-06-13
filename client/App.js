@@ -27,12 +27,13 @@ const App = props => {
   // })
 
   return (
-    <div>
+    <div style={{textAlign: 'center', padding: '16px', margin: '10px'}}>
       <div>
-
-      </div>
-      <h1>Humans for Small Biz</h1>
-      <NavBar />
+        <h1 style={{fontSize: '50px'}}>Small Bites</h1>
+      </div >
+      <div>Giving exposure to small food businesses and local eateries</div><br></br>
+      <NavBar /><br></br>
+      <div></div>
       <FeaturedContainer />
       {/* <Test /> */}
       <div>Footer Content in App.js</div>

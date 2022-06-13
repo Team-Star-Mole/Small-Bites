@@ -6,10 +6,12 @@ module.exports = {
   entry: {
     src: './client/index.js'  
   },
+
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'build')
   },
+
   module: {
     rules: [
       // compiling react to js

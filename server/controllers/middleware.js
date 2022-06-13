@@ -45,21 +45,25 @@ getCustomers.getBackendData = (req, res, next) => {
 // }
 
 getCustomers.getBodegaNames = (req, res, next) => {
-    //    const dataQuery = ''; 
+    const { id } = req.params;
+    console.log('id')
+    console.log('req.params:', req.params)
+    console.log('req body:', req.body);
     pool.query(`SELECT * FROM bodeganame`)
     .then((data) => {
-        res.locals.customer = data.rows;
+        // console.log(data)
+        res.locals.bodega = data.rows;
         console.log(data.rows);
         return next();
     })
     .catch((err) => 
     {
-        console.log('error in getBackendData in middleware.js')
-        next(
+        console.log('error in getBodegaNames in middleware.js')
+        return next(
             {
-                log: 'error in getBackendData in middleware.js',
+                log: 'error in getBodegaNames in middleware.js',
                 status: 400,
-                message: { err: 'error in getBackendData in middleware.js' },
+                message: { err: 'error in getBodegaNames in middleware.js' },
             }
         )
     })
