@@ -5,6 +5,8 @@ import { BrowserRouter as Router} from 'react-router-dom';
 import BodegaOneMenu from "./component/BodegaOneMenu";
 import { Switch, Route } from 'react-router-dom';
 
+import styles from '../scss/application.scss';
+
 reactDom.render(<App />, document.getElementById('root'));
 
 // const root = reactDom.createRoot(document.getElementById('root'));

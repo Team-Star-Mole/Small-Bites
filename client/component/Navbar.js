@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 
-const NavBar = () => {
 
-  
+const NavBar = () => {
 
   return (
     <div className='navbar-container'>

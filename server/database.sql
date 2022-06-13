@@ -31,6 +31,13 @@ CREATE TABLE food_bodega_3(
     bodega_id int
 )
 
+--  adding URL table
+-- alter table bodeganame add image_url varchar(1000)
+
+-- delete rows that have null values
+DELETE FROM bodeganame 
+where bodega_id is null 
+
 -- update all of bodega_id column to equal 2 
 Update food_bodega_2 set bodega_id = 2 where bodega_id = 1
 
