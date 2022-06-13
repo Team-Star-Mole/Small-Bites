@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const cors = require('cors');
 const customerRouter = require('./routes/customerRoutes');
+const bodegaRouter = require('./routes/apiRoutes')
 const PORT = 5002;
 
 app.use(cors());
@@ -12,13 +13,22 @@ app.use(express.urlencoded({ extended: true }));
 
 // app.use(express.static(path.resolve(__dirname, '../client')));
 
+// app.get('/bodegareact', (req, res) => {
+//   res.status(200).sendFile(path.resolve(__dirname, '../client/component/BodegaOneMenu.js'))
+// })
 // get database data to render on the frontend
 app.use('/', customerRouter);
+// app.use('/api/1', bodegaRouter);
+
+app.use('/api', bodegaRouter);
 
 // Testing localhost:5000/tom
 app.get('/tom', (req, res) => {
   res.status(200).send('hey its the server')
 })
+
+
+
 
 app.use('*', (req, res) => res.status(404).send('This is not the page you\'re looking for...'));
 

@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/fraisai/scratch-project#readme",
   "dependencies": {
+    "@mantine/core": "^4.2.9",
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "pg": "^8.7.3",

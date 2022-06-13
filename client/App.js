@@ -4,7 +4,14 @@ import { useState, useEffect } from 'react';
 import Test from './component/Test'
 import NavBar from './component/Navbar';
 import FeaturedContainer from './containers/FeaturedContainer';
+import BodegaOneMenu from './component/BodegaOneMenu';
 
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 
 const App = props => {
@@ -28,10 +35,13 @@ const App = props => {
 
   return (
     <div>
+      <div>
+
+      </div>
       <h1>Humans for Small Biz</h1>
       <NavBar />
       <FeaturedContainer />
-      <Test />
+      {/* <Test /> */}
       <div>Footer Content in App.js</div>
     </div>
   );
