@@ -1,5 +1,9 @@
 CREATE DATABASE starmole;
+-- Alter table table_name add serial primary key (column_name)
+-- ALTER TABLE table_name
+-- ADD column_name datatype;
 
+-- Insert https://www.sqlservertutorial.net/sql-server-basics/sql-server-insert-multiple-rows/
 CREATE TABLE dummytable(
     dummy_id PRIMARY SERIAL KEY,
     name VARCHAR(255)
@@ -32,6 +36,13 @@ Update food_bodega_2 set bodega_id = 2 where bodega_id = 1
 
 -- IF VIEW MENU BUTTON for Bodega 1 IS CLICKED: send get request to get menu for bodega 1 food table
 SELECT * FROM food_bodega_1
+
+-- Insert into food_bodega (price, item_description, bodega_id) 
+-- Values (7.00, 'coffee', 3), 
+-- (16.00, 'sub sandwich', 3), 
+-- (3.00, 'soda', 3),
+-- (11.00, 'salad', 3),
+-- (2.50, 'candy', 3)
 
 pool.query('INSERT INTO food_bodega_1 (item_id, price, item_description, bodega_id) VALUES=$1 VALUES=$2 VALUES=$3 VALUES=$4', [1, 5.00, 'coffee', 1])
 

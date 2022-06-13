@@ -16,7 +16,7 @@ const NavBar = () => {
           name='search'          
           placeholder='Support a small biz'
         />
-        <button type='submit'>Search!</button>
+        <button type='submit'>Search...</button>
       {/* </form> */}
     </div>
   )
