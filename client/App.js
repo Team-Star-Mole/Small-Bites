@@ -36,7 +36,7 @@ const App = props => {
       <div></div>
       <FeaturedContainer />
       {/* <Test /> */}
-      <div>Footer Content in App.js</div>
+      {/* <div>Footer Content in App.js</div> */}
         {/* <Routes> */}
           {/* <Route path='/' element={<App />}/> */}
           {/* <Route path='/bodegareact' element={<BodegaOneMenu />} /> */}
