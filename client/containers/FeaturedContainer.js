@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import FeaturedBiz from '../component/FeaturedBiz';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Routes } from 'react-router-dom';
+import Bodega from '../component/BodegaOneMenu';
+
 
 // Featured Business Webpage
 const FeaturedContainer = () => {
@@ -13,9 +17,14 @@ const FeaturedContainer = () => {
 
   return (
     <div className='featured-container'>
-      {/* components rendered in featured container */}
-      featured-container
-      {smallBizArray}
+       featured-container
+       {smallBizArray}
+    <Router>
+      <Routes>
+      <Route path="/FeaturedBiz" component={<FeaturedBiz />} />
+        <Route path="/FeaturedBiz/:id" component={<Bodega />} />
+      </Routes>
+    </Router>
     </div>
   )
 
