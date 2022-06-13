@@ -41,7 +41,8 @@ module.exports = {
     },
     proxy: {
       '/': 'http://localhost:5002',
-      '/api': 'http://localhost:5002'
+      '/api': 'http://localhost:5002',
+      // '/bodegareact': 'http://localhost:5002/bodegareact'
     }
   }
 }

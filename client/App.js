@@ -1,18 +1,11 @@
 import React, { Component } from 'react';
 import { useState, useEffect } from 'react';
-// import './stylesheets/styles.css';
 import Test from './component/Test'
 import NavBar from './component/Navbar';
 import FeaturedContainer from './containers/FeaturedContainer';
 import BodegaOneMenu from './component/BodegaOneMenu';
-
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-
+import { Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router} from 'react-router-dom';
 
 const App = props => {
   // const [name, setName] = useState('');
@@ -43,6 +36,10 @@ const App = props => {
       <FeaturedContainer />
       {/* <Test /> */}
       <div>Footer Content in App.js</div>
+        {/* <Routes> */}
+          {/* <Route path='/' element={<App />}/> */}
+          {/* <Route path='/bodegareact' element={<BodegaOneMenu />} /> */}
+        {/* </Routes> */}
     </div>
   );
 };

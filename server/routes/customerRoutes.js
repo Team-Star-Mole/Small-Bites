@@ -16,6 +16,10 @@ router.get('/bodega-names', getCustomers.getBodegaNames, (req, res) => {
 })
 
 
+// router.get('/confirm', getCustomers.placeOrder, (req, res) => {
+//     res.status(200).json(res.locals.order);
+// })
+
 
 
 

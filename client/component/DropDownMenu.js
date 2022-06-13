@@ -13,7 +13,6 @@ const DropDownMenu = ({menu}) => {
     // })\
 
     console.log('list', list)
-    // console.log('menu', menu)
 return (
     <div className="list"> 
     <h1>Featured Bodegas</h1>

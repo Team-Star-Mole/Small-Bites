@@ -7,7 +7,8 @@ router.get('/:id', bodega.getMenu, (req, res) => {
         res.status(200).json(res.locals.customer);
 });
 
-// app.get('/bodegareact', (req, res) => {
+// router.get('/bodegareact', (req, res) => {
 //   res.status(200).sendFile(path.resolve(__dirname, '../client/component/BodegaOneMenu'))
 // })
+
 module.exports = router;

@@ -11,3 +11,7 @@
 // git push origin featureraisa
 // git checkout -b featureraisa (create a new branch) 
 // git branch -v
+
+// We are fetching data for specific bodegas in featuredbiz.
+// We then need to pass down fetched bodega menu data down into BodegaOneMenu child component.
+// Now we render the data passed down.
