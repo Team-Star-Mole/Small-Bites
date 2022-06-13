@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-
+import { TimeInput } from '@mantine/dates';
+import { Button } from '@mantine/core';
 
 const BodegaOneMenu = ({chosenId, name}) => {
   const [menu, setMenu] = useState([]);
@@ -27,9 +28,15 @@ const BodegaOneMenu = ({chosenId, name}) => {
       <h1 style={{textAlign: 'center'}}>{name} Menu Items</h1>
       {menu.map(el => {
         return (
-          <div style={{textAlign: 'center'}}>{el.item_description} {el.price} </div>
+          <div style={{textAlign: 'center'}}>{el.item_description} ${el.price} </div>
         )
       })}
+      <div style={{display: 'flex', justifyContent: 'center'}}>
+      <TimeInput label="" format="12" defaultValue={new Date()} />
+      <Button>Schedule Pick Up Time</Button>
+      </div>
+
+
     </>
   )
 }
