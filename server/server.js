@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 // app.use(express.static(path.resolve(__dirname, '../client')));
 
 // app.get('/bodegareact', (req, res) => {
-//   res.status(200).sendFile(path.resolve(__dirname, '../client/component/BodegaOneMenu.js'))
+//   res.status(200).send(path.join(__dirname, '../client/component/BodegaOneMenu.js'))
 // })
 // get database data to render on the frontend
 app.use('/', customerRouter);

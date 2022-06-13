@@ -24,6 +24,26 @@ getCustomers.getBackendData = (req, res, next) => {
     })
 }
 
+// getCustomers.placeOrder = (req, res, next) => {
+//     console.log(req.body)
+//     pool.query(`SELECT * FROM food_bodega_1`)
+//     .then((data) => {
+//         res.locals.customer = data.rows;
+//         return next();
+//    })
+//    .catch((err) => 
+//     {
+//     console.log('error in getBackendData in middleware.js')
+//     next(
+//         {
+//             log: 'error in getBackendData in middleware.js',
+//             status: 400,
+//             message: { err: 'error in getBackendData in middleware.js' },
+//         }
+//     )
+//     })
+// }
+
 getCustomers.getBodegaNames = (req, res, next) => {
     //    const dataQuery = ''; 
     pool.query(`SELECT * FROM bodeganame`)

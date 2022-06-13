@@ -3,7 +3,6 @@ const pool = require('../db.js'); // connect to database
 
 const bodega =  {};
 
-
 bodega.getMenu = (req, res, next) => {
     const { id } = req.params;
     console.log(req.params)
