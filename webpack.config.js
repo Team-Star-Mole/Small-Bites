@@ -6,10 +6,12 @@ module.exports = {
   entry: {
     src: './client/index.js'  
   },
+
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'build')
   },
+
   module: {
     rules: [
       // compiling react to js
@@ -40,7 +42,9 @@ module.exports = {
       // directory: path.resolve(__dirname, 'build')
     },
     proxy: {
-      '/': 'http://localhost:5000'
+      '/': 'http://localhost:5002',
+      '/api': 'http://localhost:5002',
+      // '/bodegareact': 'http://localhost:5002/bodegareact'
     }
   }
 }
